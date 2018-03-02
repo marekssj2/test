@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav {
+  height: 50px;
+}
+
+  .topnav a {
+    float: left;
+    display: block;
+    height: 22px;
+    color: #efefef;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight:bold;
+    text-shadow: 0 0 3px #000,0 0 5px #000;
+  }
+
+  .topnav a:not(:first-child){
+    float: right;
+  }
+
+  .topnav a:hover {
+    background-color: rgba(239,239,239,0.8);
+    color: black;
+    text-shadow: none;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .black{
+    background-color:rgba(0,0,0,0.5);
+    color: red;
+    transition: 0.3s;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .topnav.responsive a:not(:first-child){
+    background-color:rgba(0,0,0,0.5);
+  } */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:rgba(0,0,0,0);
+    z-index: 2;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color:rgba(0,0,0,0.5);
+  }
+
+  .topnav.responsive a:hover {
+    /* background-color: #efefef; */
+    background-color: rgba(239,239,239,0.8);
+
+    color: black;
+  }
+}
+
+.sec1{
+  width: 100%;
+  height: 100vh;
+  /* Photo by Eddi Aguirre on Unsplash */
+  background:url(images/eddi-aguirre-569990-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.content{
+  /* height: 100vh; */
+  margin: 30px auto;
+  padding: 30px 5%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.content:nth-child(even){
+  background: #efefef;
+}
+
+.content h2{
+  margin-bottom: 30px;
+}
+
+.footer{
+  background: #b16e3f;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+}
+
+.footer p{
+  margin-top:60px;
+  padding-top: 20px;
+  text-align: center;
+}
